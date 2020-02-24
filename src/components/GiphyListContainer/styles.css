@@ -1,0 +1,39 @@
+.giphy-container {
+  width: 100%;
+  margin: 50px auto 20px auto;
+  box-sizing: border-box;
+}
+
+.giphy-list-title {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.giphy-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: solid 10px yellow;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 420px) {
+  .giphy-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    height: calc(100vh - 250px);
+  }
+  .giphy-container {
+    margin-top: 20px;
+  }
+  .giphy-list-title {
+      margin: 10px auto;
+      text-align: center;
+  }
+}
